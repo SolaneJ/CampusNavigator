@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cn-gateway
+  cloud:
+    nacos:
+      config:
+        import-check:
+          # 暂时不需要获取配置中心项，于是关闭导入检查
+          enabled: false
+
+server:
+  port: 8080  # 网关端口
